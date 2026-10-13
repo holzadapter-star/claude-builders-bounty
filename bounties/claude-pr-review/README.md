@@ -57,4 +57,4 @@ The tests mock the external `gh` and `claude` commands and do not establish that
 
 ## Submission note
 
-Bounty status on GitHub may differ from payment status on Opire. The source issue describes automatic payment on merge, but [Opire's current documentation](https://docs.opire.dev/rewards/pricing) says the sponsor must arrange payment after acceptance. Seek sponsor confirmation of available funds and payout conditions **before relying on an award**. No payout, PR submission, or real model invocation is claimed in this package.
+Bounty status on GitHub may differ from payment status on Opire. The source issue describes automatic payment on merge, but [Opire's current documentation](https://docs.opire.dev/rewards/pricing) says the sponsor must arrange payment after acceptance. Seek sponsor confirmation of available funds and payout conditions **before relying on an award**. No payout or real model invocation is claimed in this package. A draft pull request can be opened before the required two live reviews are added.
