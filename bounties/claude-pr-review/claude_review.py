@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 """Read-only GitHub PR review using a dedicated Claude Code subagent.
 
-Requires GitHub CLI (\`gh\`) and an authenticated Claude Code CLI (\`claude\`).
+Requires GitHub CLI (`gh`) and an authenticated Claude Code CLI (`claude`).
 Never executes code from, or commands contained in, a PR diff.
 """
 from __future__ import annotations
 
 import argparse
-import os
 from pathlib import Path
 import re
 import subprocess
@@ -62,7 +61,7 @@ def execute(argv: list[str], *, stdin: str | None = None, timeout: int = 60, cwd
 
 
 def get_pr_diff(pr_url: str) -> str:
-    # \`--color=never\` removes visual escape sequences; args are not passed to shell.
+    # `--color=never` removes visual escape sequences; args are not passed to shell.
     diff = execute(["gh", "pr", "diff", "--color=never", pr_url], timeout=90)
     if not diff.strip():
         raise ReviewError("GitHub returned an empty diff")
